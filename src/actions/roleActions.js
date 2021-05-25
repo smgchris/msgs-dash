@@ -16,7 +16,7 @@ export const fetchRolesError = (data) => {
 }
 
 export const fetchRoles = () => dispatch => {
-    fetch('https://lacorniche.rw/api/get_roles.php')
+    fetch('http://127.0.0.1:8000/get-permissions')
         .then(res => res.json())
         .then(roles => {
             dispatch(fetchRolesSuccess(roles))

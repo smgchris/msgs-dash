@@ -28,13 +28,10 @@ class UserRow extends React.Component {
      
           <tr>
             <th scope="row">{index+1}</th>
-            <td>{user.username}</td>
-            <td>{user.names}</td>
-            <td>{user.role.role_name}</td>
-            <td>{user.phone}</td>
+            <td>{user.name}</td>
+            <td>{''}</td>
             <td>{user.email}</td>
-            <td>{user.address}</td>
-            <td><Button outline className="mb-2 mr-2 btn-transition" color="primary" onClick={()=>this.onUpdate(user.user_id)}>Update</Button>
+            <td><Button outline className="mb-2 mr-2 btn-transition" color="primary" onClick={()=>this.onUpdate(user.id)}>Update</Button>
                  </td>
           </tr>
          

@@ -61,7 +61,7 @@ class AppSidebar extends Component {
 }
 
 const mapStateToProps = state => ({
-    enableBackgroundImage: state.ThemeOptions.enableBackgroundImage,
+    enableBackgroundImage: !state.ThemeOptions.enableBackgroundImage,
     enableSidebarShadow: state.ThemeOptions.enableSidebarShadow,
     enableMobileMenu: state.ThemeOptions.enableMobileMenu,
     backgroundColor: state.ThemeOptions.backgroundColor,

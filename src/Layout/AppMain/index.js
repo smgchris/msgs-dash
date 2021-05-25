@@ -19,7 +19,11 @@ const Tables = lazy(() => import('../../DemoPages/Tables'));
 
 
 // const DefaultPage = lazy(() => import('../../DemoPages/Login'));
-const Users = lazy(() => import('../../DemoPages/Users'));
+const MsgDash = lazy(() => import('../../DemoPages/MsgDash'));
+const PostDash = lazy(() => import('../../DemoPages/PostDash'));
+const FeedbackDash = lazy(() => import('../../DemoPages/FeedbackDash'));
+const SettingsDash = lazy(() => import('../../DemoPages/SettingsDash'));
+const UserDash = lazy(() => import('../../DemoPages/Users'));
 const Store = lazy(() => import('../../DemoPages/Store'));
 // const Products = lazy(() => import('../../DemoPages/Products'));
 const Kitchen = lazy(() => import('../../DemoPages/Kitchen'));
@@ -136,51 +140,61 @@ const AppMain = () => {
                 <Route path="/dashboards" component={Dashboards} />
             </Suspense>
 
-            {/* La Corniche */}
-
+            {/* shis*/}
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait as we load laCorniche
+                            Please wait as we load SHIS 
                         </h6>
                     </div>
                 </div>
             }>
-                <Route path="/users" component={Users} />
+                <Route path="/users" component={UserDash} />
             </Suspense>
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait as we load laCorniche
+                            Please wait as we load SHIS 
                         </h6>
                     </div>
                 </div>
             }>
-                <Route path="/departments" component={Departments} />
+                <Route path="/messages" component={MsgDash} />
             </Suspense>
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait as we load laCorniche
+                            Please wait as we load SHIS
                         </h6>
                     </div>
                 </div>
             }>
-                <Route path="/roles" component={Roles} />
+                <Route path="/posts" component={PostDash} />
             </Suspense>
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait as we load laCorniche
+                            Please wait as we load SHIS
                         </h6>
                     </div>
                 </div>
             }>
-                <Route path="/suppliers" component={Suppliers} />
+                <Route path="/feeback" component={FeedbackDash} />
+            </Suspense>
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-3">
+                            Please wait as we load SHIS
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/settings" component={SettingsDash} />
             </Suspense>
             <Suspense fallback={
                 <div className="loader-container">

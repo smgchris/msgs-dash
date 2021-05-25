@@ -49,7 +49,7 @@ export default function(state=initiateState,action){
 
 
 
-
+        
         case SELECTED_USER:
             return{
                 item: action.payload

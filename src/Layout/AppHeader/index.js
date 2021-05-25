@@ -31,13 +31,17 @@ class Header extends React.Component {
                     <HeaderLogo/>
 
                     <div className={cx(
-                        "app-header__content",
+                        "app-header__content row",
                         {'header-mobile-open': enableMobileMenuSmall},
                     )}>
-                        <div className="app-header-left">
+                        <div className="col-lg-4 app-header-left">
                             <SearchBox/>
                         </div>
-                        <div className="app-header-right">
+                        <div className="col-lg-4 app-header-center">
+                            <h6>Messages Dashboard</h6>
+                        </div>
+                        <div className="col-lg-4 app-header-right">
+
                             <UserBox/>
                         </div>
                     </div>

@@ -46,8 +46,8 @@ class PageTitle extends Component {
 }
 
 const mapStateToProps = state => ({
-    enablePageTitleIcon: state.ThemeOptions.enablePageTitleIcon,
-    enablePageTitleSubheading: state.ThemeOptions.enablePageTitleSubheading,
+    enablePageTitleIcon: !state.ThemeOptions.enablePageTitleIcon,
+    enablePageTitleSubheading: !state.ThemeOptions.enablePageTitleSubheading,
 });
 
 const mapDispatchToProps = dispatch => ({});

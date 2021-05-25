@@ -15,7 +15,6 @@ class UpdateItem extends React.Component {
 
     render() {
         const item=this.props.items.find(item=>item.product_id===this.props.match.params.id)
-        console.log(item)
         return (
             <Fragment>
 

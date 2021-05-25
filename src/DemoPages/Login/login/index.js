@@ -49,12 +49,12 @@ class LoginForm extends Component {
 
 
         {
-          userId === "1" || userId === "2" || userId === "4" ? (<div> {history.push("/kitchen/front-end-orders")} </div>
+          userId === "1" || userId === "2" || userId === "4" ? (<div> {history.push("/messages/")} </div>
           ) : (<div></div>)
         }
 
         {
-          userId === "1" || userId === "2" || userId === "3" ? (<div> {history.push("/store/stock/manage-stock")} </div>
+          userId === "1" || userId === "2" || userId === "3" ? (<div> {history.push("/messages/")} </div>
           ) : (<div></div>)
         }
 
@@ -64,7 +64,7 @@ class LoginForm extends Component {
         }
 
         {
-          userId === "1" ? (<div> {history.push("/dashboards/main")} </div>
+          userId === "1" ? (<div> {history.push("/messages/")} </div>
           ) : (<div></div>)
         }
 
@@ -101,13 +101,13 @@ class LoginForm extends Component {
 
 
       {
-        userId === "1" || userId === "2" || userId === "3" ? (<div> {window.location.replace("#/store/stock/manage-stock")} </div>
+        userId === "1" || userId === "2" || userId === "3" ? (<div> {window.location.replace("#/messages/")} </div>
         ) : (<div></div>)
       }
 
 
       {
-        userId === "1" || userId === "2" || userId === "4" ? (<div> {window.location.replace("#/kitchen/front-end-orders")} </div>
+        userId === "1" || userId === "2" || userId === "4" ? (<div> {window.location.replace("#/messages/")} </div>
         ) : (<div></div>)
       }
 

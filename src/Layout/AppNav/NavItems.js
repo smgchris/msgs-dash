@@ -1,11 +1,4 @@
-export const MainNav = [
-    {
-        icon: 'pe-7s-rocket',
-        label: 'Dashboard',
-        to: '#/dashboards/main',
-    },
 
-];
 export const ComponentsNav = [
     {
         icon: 'pe-7s-diamond',
@@ -118,32 +111,74 @@ export const ChartsNav = [
     },
 ];
 
-export const UsersNav = [
+export const MainNav = [
     {
         icon: 'pe-7s-users',
         label: 'Users',
-        to: '#/users/manage-users',
+        content: [
+            {
+                label: 'Manage Users',
+                to: '#/users/manage-users',
+            },
+            {
+                label: 'Add New User',
+                to: '#/users/add-new-user', 
+            }
+        ]
+
+
     },
     {
-        icon: 'pe-7s-network',
-        label: 'Departments',
-        to: '#/departments/manage-departments',
+        icon: 'pe-7s-speaker',
+        label: 'Messages',
+        content: [
+            {
+                label: 'My Messages',
+                to: '#/messages/',
+            },
+            {
+                label: 'Waiting My Approval',
+                to: '#/messages/to-approve', 
+            },
+            {
+                label: 'Add New Message',
+                to: '#/messages/add-new-message', 
+            }
+        ]
+
+
     },
     {
-        icon: 'pe-7s-key',
-        label: 'Roles',
-        to: '#/roles/manage-roles',
+        icon: 'pe-7s-share',
+        label: 'Shared Messages',
+        to: '#/messages/shared-messages/',
     },
     {
-        icon: 'pe-7s-download',
-        label: 'Suppliers',
-        to: '#/suppliers/manage-suppliers',
+        icon: 'pe-7s-paper-plane',
+        label: 'Posts',
+        content: [
+            {
+                label: 'My Posts',
+                to: '#/posts/my-posts/',
+            },
+            {
+                label: 'Add New Post',
+                to: '#/posts/my-posts/add-new-post', 
+            }
+        ]
+
+
     },
-    // {
-    //     icon: 'pe-7s-graph2',
-    //     label: 'login',
-    //     to: '#/login-page/login',
-    // }
+    {
+        icon: 'pe-7s-chat',
+        label: 'Feedback',
+        to: '#/feedback/received/',
+    },
+    {
+        icon: 'pe-7s-settings',
+        label: 'Settings',
+        to: '#/settings/account/',
+    }
 ];
 
 export const StoreNav = [
@@ -151,7 +186,7 @@ export const StoreNav = [
         icon: 'pe-7s-box1',
         label: 'Stock Products',
         to: '#/store/stock/manage-stock',
-    },  
+    },
     {
         icon: 'pe-7s-ticket',
         label: 'Requisitions',
@@ -162,7 +197,7 @@ export const StoreNav = [
         label: 'Department Stock',
         to: '#/store/dept-stock',
     },
-    { 
+    {
         icon: 'pe-7s-shopbag',
         label: 'Products',
         to: '#/store/products/manage-products',
@@ -172,12 +207,12 @@ export const StoreNav = [
         label: 'Product Categories',
         to: '#/store/categories/manage-product-categories',
     },
-    
+
 
 
 ];
 
-export const KitchenNav =[
+export const KitchenNav = [
     {
         icon: 'pe-7s-hourglass',
         label: 'Requests',
@@ -204,7 +239,7 @@ export const KitchenNav =[
     //     to: '#/kitchen/summary'
     // }
 ]
-export const DashNav= [
+export const DashNav = [
     {
         icon: 'pe-7s-graph1',
         label: 'Dashboard',

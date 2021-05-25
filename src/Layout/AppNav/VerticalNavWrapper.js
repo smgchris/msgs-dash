@@ -63,29 +63,14 @@ class Nav extends Component {
                     </>
                 )} */}
 
-                    {userId === "1" ?
+
+                    <div>
+                        {/* <h5 className="app-sidebar__heading">User</h5> */}
                         <MetisMenu content={MainNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down" />
-                        :
-                        <div></div>}
-
-                    {userId === "1" || userId === "2" ? (<div>
-                        <h5 className="app-sidebar__heading">User</h5>
-                        <MetisMenu content={UsersNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down" />
 
                     </div>
-                    ) : (<div></div>)}
+                   
 
-                    { userId === "1" || userId === "2" || userId === "3" ? (<div>
-                        <h5 className="app-sidebar__heading">Store Management</h5>
-                        <MetisMenu content={StoreNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down" />
-                    </div>
-                    ) : (<div></div>)}
-
-                    {userId === "1" || userId === "2" || userId === "4" ? (<div>
-                        <h5 className="app-sidebar__heading">Kitchen</h5>
-                        <MetisMenu content={KitchenNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down" />
-                    </div>
-                    ) : (<div></div>)}
                 </Fragment>
             );
         }

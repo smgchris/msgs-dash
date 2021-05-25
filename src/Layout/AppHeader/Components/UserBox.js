@@ -71,14 +71,14 @@ logout(){
                                     
                                 </UncontrolledButtonDropdown>
                             </div> */}
-                            <div className="widget-content-left  ml-3 header-user-info">
+                            {/* <div className="widget-content-left  ml-3 header-user-info">
                                 <div className="widget-heading">
                                     {this.props.auth.username}
                                 </div>
                                 <div className="widget-subheading">
                                    {this.props.auth.message}
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="widget-content-right header-user-info ml-3">
                                 {/* <Button className="btn-shadow p-1" size="sm" onClick={this.notify2} color="info"
@@ -88,7 +88,7 @@ logout(){
                                 <UncontrolledTooltip placement="bottom" target={'Tooltip-1'}>
                                     Click to see the date.
                                 </UncontrolledTooltip> */}
-                                <Button  size="lg"  color="info" onClick={this.logout}
+                                <Button    color="info" onClick={this.logout}
                                         id="Tooltip-1"> Log out
                                     {/* <FontAwesomeIcon className="mr-2 ml-2" icon={faCalendarAlt}/> */}
                                 </Button>

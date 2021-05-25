@@ -13,6 +13,8 @@ import auth from "./auth";
 import message from "./message";
 import stockLogReducer from './stockLogReducer';
 import { LOGOUT } from '../actions/types'
+import messageReducer from './messageReducer';
+import postReducer from './postReducer';
 
  const appReducer=combineReducers({
     ThemeOptions,
@@ -29,7 +31,10 @@ import { LOGOUT } from '../actions/types'
     auth:auth,
     message,
 
-    stockLog:stockLogReducer
+    stockLog:stockLogReducer,
+
+    messages:messageReducer,
+    posts:postReducer
 });
 
 // reset the state of a redux store

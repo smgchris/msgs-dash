@@ -20,7 +20,7 @@ export const fetchUsersError = (data) => {
 
 
 export const fetchUsers = () => dispatch => {
-    fetch('https://lacorniche.rw/api/get_users.php')
+    fetch('http://127.0.0.1:8000/get-users/')
         .then(res => res.json())
         .then(users => {
             dispatch(fetchUsersSuccess(users))
@@ -46,14 +46,13 @@ export const creatingUser = () => {
 }
 export const createUser = userData => dispatch => {
 
-    fetch('https://lacorniche.rw/api/register_user.php', {
+    fetch('http://127.0.0.1:8000/add-user', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
         body: JSON.stringify(userData)
     })
-        .then(res => res.json())
         .then(user => 
         
                dispatch({
@@ -63,8 +62,6 @@ export const createUser = userData => dispatch => {
             
         ).catch((error) => {
             const errorPayload = {};
-            errorPayload['message'] = error.response.data.message;
-            errorPayload['status'] = error.response.status;
 
             dispatch({
                 type: NEW_USER_ERROR,
